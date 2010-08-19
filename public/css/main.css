@@ -26,7 +26,7 @@ header, footer, section, article {
 #path {
 	color: #b53131;
 }
-.date {
+.date, .author {
   font-style: italic;
   float: right;
   line-height: 43px;
