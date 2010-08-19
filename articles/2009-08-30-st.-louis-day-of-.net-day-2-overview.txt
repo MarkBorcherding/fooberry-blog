@@ -1,0 +1,103 @@
+title: St. Louis Day of .Net Day 2 Overview
+author: Mark Borcherding
+date: 2009/08/30
+
+
+
+Day two of St Louis Day of .Net held up the high expectations of <a href="http://day1.org/" title="Sermons, Preaching and Christian Community | Welcome to Day1">day 1</a>. Without the need to herd through the registration lines, we were able to jump right into the breakfast; however I missed part of the JumpStart sessions in exchange for a few more minutes of sleep.
+
+<h2>Session 0: JumpStart: Silverlight
+by <a href="http://www.notsotrivial.net/blog/" title="not so trivial .net | Non-trivial matters of interest to software architects and other like minded geeks.">Clint Edmonson</a></h2>
+As I mentioned I intended to come a little late, and between that and running into a former colleague, I only caught the last thirty minutes of Clint's presentation. Clint did a great jump with his presentation, style, pace and content. Silverlight 3 looks like it is a solid and extensible platform. I'm interested to see if the out of browser experience is available on multiple platforms. It might be a potential replacement to Adobe Air. It also looks like the first step to desktop applications, written with Microsoft tools, that run on all platforms. This has to be the eventual future of Silverlight.
+
+<div style="width:425px;text-align:left" id="__ss_1932852"><a style="font:14px Helvetica,Arial,Sans-serif;display:block;margin:12px 0 3px 0;text-decoration:underline;" href="http://www.slideshare.net/clintedmonson/dodn2009-jump-start-silverlight" title="DODN2009 - Jump Start Silverlight">DODN2009 - Jump Start Silverlight</a><object style="margin:0px" width="425" height="355"><param name="movie" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=dodn2009-jumpstartsilverlight-090831124815-phpapp02&rel=0&stripped_title=dodn2009-jump-start-silverlight" /><param name="allowFullScreen" value="true"/><param name="allowScriptAccess" value="always"/><embed src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=dodn2009-jumpstartsilverlight-090831124815-phpapp02&rel=0&stripped_title=dodn2009-jump-start-silverlight" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="355"></embed></object><div style="font-size:11px;font-family:tahoma,arial;height:26px;padding-top:2px;">View more <a style="text-decoration:underline;" href="http://www.slideshare.net/">presentations</a> from <a style="text-decoration:underline;" href="http://www.slideshare.net/clintedmonson">Clint Edmonson</a>.</div></div>
+
+<h2>Session 1: An Introduction to Inversion of Control
+by <a href="http://twitter.com/drusellers" title="">Dru Sellers</a></h2>
+This session, like Tim Bracz's session, reaffirmed some of the efforts our team tried, but ultimately failed, to direct a former employer to adopting a Dependency Injection pattern. Dru had one of the most fluent presentation styles at the conference. It really helped me to pay less time reading slides, and more time listening to what he had to say. I love presentations with props, and even though Dru's prop was as simple as a magazine cover, it brought a tactile perspective to his session that others lacked. Props go a long way in my opinion. If for nothing more than holding up the book you are talking about, I pay more attention.
+
+This presentation would have been awesome following right behind the Tim Bracz's. Tim's session does just what the title says and eases you into unit test by eliminating dependencies and introducing mocking. Dru's shows how IoC allows classes to be designed and instantiated without those hard coded dependencies.  Lee Brandt's session on BDD then breaks the stigma of tests. It feels like a full journey from no testing to living breathing specifications in code. 
+
+<h2>Session 2: n/a</h2>
+I started out in one of the sessions in this time slot, but was interrupted with a phone call and felt the talk looked like it was similar to another, so I skipped out. 
+
+<h2>Lunch</h2>
+Lunch was again way too long. The previous session ended at 11:40, but lunch didn't start until 12:00? And then it ended at 1:05, but the next session does start until 1:15? That's 95 minutes for lunch. It was made even worse since I skipped out on part of the previous session.
+
+
+<h2>Session 3: Getting Started with Behavior-Driven Development (BDD)
+by <a href="http://geekswithblogs.net/leesblog/Default.aspx" title="The Code Bucket">Lee Brandt</a></h2>
+Lee made a great case for BDD. Whenever people have asked me what was different between TDD and BDD, I usually struggled and described TDD as the class-per-test anti-pattern and BDD as a specification focused more on what was going to be delivered to the customer. It turns out Lee agrees with me! 
+
+Lee gave a good introduction to MSpec, which I've seen before. MSpec looks so foreign to people, I think showing a sample of an NUnit test broken in the parts of an MSpec might ease the eyes into seeing the classes named "It". Take for example our specification pattern.
+
+<pre name="code" class="C#">
+[TestFixture]
+public class When_a_specific_action_happens : Specification{
+	override public void Context(){
+		// Arrange
+	}
+	
+	override public void Behavior(){
+		//Action
+	}
+	
+	[Test] public void the_specific_action_should_be_tested(){
+		// Assert
+	}
+}
+</pre>
+
+And then transform that into:
+<pre name="code" class="c#">
+[Concern("Console runner")]
+  public class When_a_specific_action_happens
+  {
+    Establish context = ()=>
+    {
+      // arrange
+    };
+
+    Because of = ()=>{
+	   // action
+    }
+      
+
+    It the_specific_action_should_be_tested = ()=>{
+	   // assert
+    }
+  }
+  
+</pre>
+
+Classes named "It" and the extensive use of Lambda can make the MSpec look intimidating. 
+
+Another warm fuzzy I took from Lee was keeping in "User Voice" throughout the spec. I've written several extension method to Selenium and NUnit's assert statements to keep the tests as readable as possible. Our Selenium <strike>test</strike> specifications have lines that look like the following.
+<pre name="code" class="c#">
+	theBrowser.hasTextBox("firstName").WithValue("Mark");
+	"errorPanel".aspNetControl().isVisibleIn(theBrowser);
+</pre> 
+
+It isn't as close to English as MSpec, but is better than without it.
+
+<h2>Session 4: Something about WPF and Surfaces</h2>
+The session I saw on Microsoft Surfaces is not on the agenda via the website. Surfaces looks really attractive, but I still see little use for it, at its current price point, beyond marketing eye candy. That is a valid use, and the application they wrote for it would definitely draw people into a trade show booth.
+
+To me though, this is still the how I see surfaces (even through this isn't Surfaces.).
+<object width="512" height="296"><param name="movie" value="http://www.hulu.com/embed/Fca-bXwgpqLsYlKxDXpdYg/100/258"></param><param name="allowFullScreen" value="true"></param><embed src="http://www.hulu.com/embed/Fca-bXwgpqLsYlKxDXpdYg/100/258" type="application/x-shockwave-flash" allowFullScreen="true"  width="512" height="296"></embed></object>
+
+<h2>Session 5: LINQ Internals
+by <a href="http://solutionizing.net/" title="Solutionizing .NET">Keith Dahlby</a></h2>
+The final session of the conference was by far the most in depth. This happened to me when I went to Tech Ed in 2008. The last session was on LINQ and how expressions trees worked, but I was too exhausted to stay awake through it all. Luckily for me, either STLDODN was shorter and I wasn't as exhausted or Keith was more entertaining, but I was able to walk away with a good foundation for developing my knowledge of LINQ and Providers to the point where I can start writing my own. 
+
+Keith is another one of those presenters that I would see regardless of what they were presenting. I saw him talk at St Louis MOSS Camp, and his presentation saved the event for me. While STLDODN was good all around, Keith not only knows his stuff very well, but tries to transfer as much of that knowledge as he can in 75 minutes. In the arena of LINQ, that is a difficult task.
+
+<div style="width:425px;text-align:left" id="__ss_1950173"><a style="font:14px Helvetica,Arial,Sans-serif;display:block;margin:12px 0 3px 0;text-decoration:underline;" href="http://www.slideshare.net/dahlbyk/linq-internals-stldodn" title="LINQ Internals - STLDODN">LINQ Internals - STLDODN</a><object style="margin:0px" width="425" height="355"><param name="movie" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=kdahlby-200908-stldodn-linqinternals-090903222505-phpapp01&stripped_title=linq-internals-stldodn" /><param name="allowFullScreen" value="true"/><param name="allowScriptAccess" value="always"/><embed src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=kdahlby-200908-stldodn-linqinternals-090903222505-phpapp01&stripped_title=linq-internals-stldodn" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="355"></embed></object><div style="font-size:11px;font-family:tahoma,arial;height:26px;padding-top:2px;">View more <a style="text-decoration:underline;" href="http://www.slideshare.net/">presentations</a> from <a style="text-decoration:underline;" href="http://www.slideshare.net/dahlbyk">Keith Dahlby</a>.</div></div>
+
+We have several vendor API's that could be easily wrapped with a LINQ provider and we would be free from their tedious API calls.
+
+<h2>Overall</h2>
+Overall St Louis Day of .Net was a huge success and well worth the registration cost and time away from work. You won't find so much knowledge, so close to home for so little money. Tomorrow, or later in the week I have a few improvements I would like to see next year.
+
+Here are some of the photos from the event.
+<object width="400" height="300"> <param name="flashvars" value="offsite=true&lang=en-us&page_show_url=%2Fphotos%2Fstldodn%2Fshow%2F&page_show_back_url=%2Fphotos%2Fstldodn%2F&user_id=38035365@N07&jump_to="></param> <param name="movie" value="http://www.flickr.com/apps/slideshow/show.swf?v=71649"></param> <param name="allowFullScreen" value="true"></param><embed type="application/x-shockwave-flash" src="http://www.flickr.com/apps/slideshow/show.swf?v=71649" allowFullScreen="true" flashvars="offsite=true&lang=en-us&page_show_url=%2Fphotos%2Fstldodn%2Fshow%2F&page_show_back_url=%2Fphotos%2Fstldodn%2F&user_id=38035365@N07&jump_to=" width="400" height="300"></embed></object>

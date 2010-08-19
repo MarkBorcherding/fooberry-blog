@@ -1,0 +1,7 @@
+title: ReSharper 4.1 Released
+author: Mark Borcherding
+date: 2008/09/04
+
+
+
+JetBrains released ReSharper 4.1. Read the <a href="http://www.jetbrains.com/resharper/releaseNotes41.html">release notes</a> at JetBrains.

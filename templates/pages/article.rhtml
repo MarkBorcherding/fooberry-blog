@@ -8,6 +8,12 @@
     <%= body %>
   </section>
 
+	<section class="tags">
+			<% article[:tags].split.each do |tag| %>
+			  <a href="/tags/<%= tag %>"><%= tag %></a>
+			<% end %>
+	</section>
+
   <section class="comments">
     <% if @config[:disqus] %>
       <div id="disqus_thread"></div>

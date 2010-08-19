@@ -1,0 +1,7 @@
+title: My Colorful Git Prompt
+author: Mark Borcherding
+date: 2010/07/27
+
+
+
+<p>We all like color dont we? We also love the command line right? Well, if you dont, you should love it. There is nothing I hate more than seeing a screen full of gray text. You can provide a lot of context via color, especially in your prompt.</p>  <p>Take my git prompt for example.&#160; I easily know if I have any changes in the branch, if Im staging changes and an overview of the changes. </p>  <p><a href="http://fooberry.com/wp-content/uploads/2010/07/image1.png"><img style="border-bottom: 0px; border-left: 0px; display: inline; border-top: 0px; border-right: 0px" title="image" border="0" alt="image" src="http://fooberry.com/wp-content/uploads/2010/07/image_thumb1.png" width="629" height="499" /></a></p>  <p>This is done in PowerShell. If youre still using cmd as your shell, you should stop immediately. Especially if you use git. I highly recommend checking out <a href="http://github.com/dahlbyk/posh-git">posh-git</a>. Auto-complete on git commands and branch names is awesome. </p>  <p>Also, you can checkout the <a href="http://github.com/MarkBorcherding/roaming-profile/tree/master/powershell/">source for this prompt</a>. Figuring out all the changes takes some time on a large codebase, but for me its worth it.</p>

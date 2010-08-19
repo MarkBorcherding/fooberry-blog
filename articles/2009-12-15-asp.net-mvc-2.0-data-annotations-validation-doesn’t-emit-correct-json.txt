@@ -1,0 +1,48 @@
+title: Asp.net MVC 2.0 Data Annotations Validation doesnt emit correct JSON
+author: Mark Borcherding
+date: 2009/12/15
+
+
+
+<p>Apparently Im not the only one to have this sneaky little problem that has been driving me mad. Given the simple model:</p>  <pre class="C#" name="code">public class Foo {
+    [Required] public string Bar {get;set;} 
+}</pre>
+
+<p>And a simple view:</p>
+
+<pre name="code" class="html">&lt;%@ Page Title=&quot;&quot; Language=&quot;C#&quot; MasterPageFile=&quot;~/Views/Shared/Site.Master&quot; 
+Inherits=&quot;System.Web.Mvc.ViewPage&lt;Foo&gt;&quot; %&gt;
+&lt;%@ Import Namespace=&quot;MvcApplication2.Models&quot;%&gt;
+
+&lt;asp:Content ID=&quot;Content1&quot; ContentPlaceHolderID=&quot;TitleContent&quot; runat=&quot;server&quot;&gt;
+	Index
+&lt;/asp:Content&gt;
+
+&lt;asp:Content ID=&quot;Content2&quot; ContentPlaceHolderID=&quot;MainContent&quot; runat=&quot;server&quot;&gt;
+
+&lt;script src=&quot;/Scripts/jquery-1.3.2.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/Scripts/jquery.validate.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/Scripts/MicrosoftMvcJQueryValidation.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+
+ &lt;h2&gt;Index&lt;/h2&gt;
+ &lt;%= Html.ValidationSummary() %&gt;
+ &lt;% Html.EnableClientValidation(); %&gt;
+ &lt;%
+  using (Html.BeginForm())
+  {
+    ViewContext.FormContext.ClientValidationFunction = &quot;EnableClientValidation&quot;; %&gt;
+    &lt;%= Html.LabelFor(x=&gt;x.Bar) %&gt; 
+    &lt;%= Html.TextBoxFor(x=&gt;x.Bar) %&gt;            
+    &lt;input type=&quot;submit&quot; /&gt;
+&lt;%  } %&gt;
+&lt;/asp:Content&gt;</pre>
+
+<p>You would expect the form to emit the JSON needed to pass to the jQuery validator right? <strong>WRONG!</strong> It just outputs the following</p>
+
+<pre class="JavaScript" name="code">&lt;script type=&quot;text/javascript&quot;&gt;
+//&lt;![CDATA[
+EnableClientValidation({&quot;Fields&quot;:[],&quot;FormId&quot;:&quot;form0&quot;}, null);
+//]]&gt;
+&lt;/script&gt;</pre>
+
+<p>Thats no help; however, when you give it the <code>&lt;%= Html.ValidationMessageFor(x=&gt;x.Bar) %&gt;</code> you start to see what you expect. </p>

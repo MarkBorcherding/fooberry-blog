@@ -1,0 +1,7 @@
+title: ASP.Net MVC 2.0 RC 2, Input Validation and Breaking Our App
+author: Mark Borcherding
+date: 2010/02/05
+
+
+
+<p>Its been a while since Ive posted and Im trying to get back into the swing of things again. I dont really have a lot to say about the problem, just yet. Weve identified some breaking changes with ASP.Net MVC 2.0 RC 2. </p>  <p>RC 2 switches to relying on all data annotations on the model when doing validation, when previous releases only checked the values posted and properly bound to a model. To be honest, initially, I didnt like that idea. It was confusion to me why my model was attributed with attributes requiring fields, but <a href="/2009/11/06/modelstate-isvalid-is-always-true/">validation was not happening as I expected</a>.</p>  <p>Over time, I came to appreciate, and apparently exploit this feature to do conditional validation. Since the form only posts the enabled controls, I was able to simply enable/disable inputs and doing so, enable/disable their required attribute for model validation. </p>  <p>Everything worked great, until things changed in RC2. </p>  <p>You can read more about <a href="http://bradwilson.typepad.com/blog/2010/01/input-validation-vs-model-validation-in-aspnet-mvc.html">the decision to make the switch</a>.</p>

@@ -1,0 +1,7 @@
+title: New Theme
+author: Mark Borcherding
+date: 2008/09/20
+
+
+
+I'm changed my theme to something a little minimalist. Sorry if everyone liked having a choice of their background, but there were a few things I liked about <a href="http://thebuckmaker.com/">this theme</a> more than the<a href="http://windyroad.org/"> previous one</a>. I also switched to a white background for the text. I was hesitant to do so because I really like the dark code examples that match my color scheme. Hope everyone likes it. There is still some tweaking to do.

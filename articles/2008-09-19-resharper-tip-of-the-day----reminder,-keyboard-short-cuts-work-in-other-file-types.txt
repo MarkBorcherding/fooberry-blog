@@ -1,0 +1,12 @@
+title: ReSharper Tip of the Day -- Reminder, Keyboard Short-cuts Work in Other File Types
+author: Mark Borcherding
+date: 2008/09/19
+
+
+
+Just a quick reminder, most keyboard short-cuts work in other files types besides source code. In XML and HTML you can:
+<ul>
+	<li>Ctrl + Shift + / to toggle comments</li>
+	<li>Ctrl + w to expand selection</li>
+	<li>Ctrl + Alt + Shift + Up|Down to move elements up or down.</li>
+</ul>

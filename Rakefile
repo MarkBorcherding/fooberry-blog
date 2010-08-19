@@ -31,6 +31,11 @@ task :publish do
   `git push heroku master`
 end
 
+desc "Start"
+task :start do
+  `thin start -R config.ru`
+end
+
 def toto msg
   puts "\n  toto ~ #{msg}\n\n"
 end

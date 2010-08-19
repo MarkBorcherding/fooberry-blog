@@ -1,0 +1,24 @@
+title: Fixing 500.22 Error Code 0x80070032
+author: Mark Borcherding
+date: 2010/04/01
+
+
+
+<p><a href="http://www.flickr.com/photos/civisi/3158222539/"><img style="border-right-width: 0px; margin: 0px 10px 0px 0px; display: inline; border-top-width: 0px; border-bottom-width: 0px; border-left-width: 0px" title="012" border="0" alt="012" align="left" src="http://farm4.static.flickr.com/3093/3158222539_e4603f2446_m.jpg" width="240" height="161" /></a> Its nice when fixing a problem is easy.&#160; Its nice when you scratch your head for a bit and then smack your forehead because someone in front of you laid out exactly what to do, and exactly what needs to be done.&#160; I just had such a moment. </p>  <p>While working MVC into out existing ASP.Net Web Site project we hit, what we thought was a brick wall. </p>  <pre>HTTP Error 500.22 - Internal Server Error
+An ASP.NET setting has been detected that does not apply in Integrated managed pipeline mode.</pre>
+
+<p>&#160;</p>
+
+<p>Well the Visual Studio engineers deserve a hand for helping me get this going.&#160; After spending a minute looking into the web.config to find out what was wrong, I ran into this little bit of commented out configuration.</p>
+
+<pre class="xml" name="code">&lt;!-- 
+        The system.webServer section is required for running ASP.NET AJAX under Internet
+        Information Services 7.0.  It is not necessary for previous version of IIS.
+  
+	&lt;system.webServer&gt;
+
+        ...then some more config</pre>
+
+<p>&#160;</p>
+
+<p>That is exactly what was needed to take us into integrated mode in IIS, which is needed for MVC. </p>
