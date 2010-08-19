@@ -15,9 +15,9 @@ fooberry <span style="color: #ff0000;">/<strong>foo</strong> - ber - ree/</span>
 <em>* The term "commonly" is used for small definitions of the word common, meaning less than or equal to only one person.</em>
 
 None of that was much help, except maybe the last one. She still didn't understand what I meant by "foo". I decided to look up the <a href="http://en.wikipedia.org/wiki/Foo">etymology of "foo"</a>, which was no help and even "foobar" had very little.
-<blockquote>In technology, the word was probably originally propagated through system manuals by <a title="Digital Equipment Corporation" href="http://fooberry.com/wiki/Digital_Equipment_Corporation">Digital Equipment Corporation</a> in 1960s and early 1970s.</blockquote>
+<blockquote>In technology, the word was probably originally propagated through system manuals by <a title="Digital Equipment Corporation" href="/wiki/Digital_Equipment_Corporation">Digital Equipment Corporation</a> in 1960s and early 1970s.</blockquote>
 Even "FUBAR", to which "foobar" is notsuppose to berelated, provided little certainy; however, one fact did stand out.
-<blockquote>FUBAR may have been influenced by the <a title="German language" href="http://fooberry.com/wiki/German_language">German</a> word <em>furchtbar</em>, meaning terrible. It is pronounced with a soft <em>cht</em>, and probably made the transition during World War II.</blockquote>
+<blockquote>FUBAR may have been influenced by the <a title="German language" href="/wiki/German_language">German</a> word <em>furchtbar</em>, meaning terrible. It is pronounced with a soft <em>cht</em>, and probably made the transition during World War II.</blockquote>
 Maybe there is some lineage there after all. Knowing what is commonly implemented for "foo", "terrible" is probably a good substitute. I wonder if the "<a href="http://en.wikipedia.org/wiki/Hello_world">Hello World</a>" on the <a href="http://en.wikipedia.org/wiki/Enigma_machine">Enginma </a>was written using <em>furchtbar</em>.
 
 Noneof this has helped me explain "fooberry" to a non-techie. So basically, to me, "fooberry" is a term for something that sweetens whatever it is that you do.

@@ -17,15 +17,15 @@ public class Fooberry
 
 and weve probably had to override Equals on them. When I went to go do it this last time, I saw ReSharper was trying to help me out.
 
-<img class="alignnone size-full wp-image-249" title="overrideequals" src="http://fooberry.com/wp-content/uploads/2008/08/overrideequals.jpg" alt="" width="371" height="62" />
+<img class="alignnone size-full wp-image-249" title="overrideequals" src="/wp-content/uploads/2008/08/overrideequals.jpg" alt="" width="371" height="62" />
 
 So I expanded the context icon to see what it would do for me. It turns out it does something really cool.
 
-<img class="alignnone size-full wp-image-251" title="contextactions" src="http://fooberry.com/wp-content/uploads/2008/08/contextactions.jpg" alt="" width="385" height="200" />
+<img class="alignnone size-full wp-image-251" title="contextactions" src="/wp-content/uploads/2008/08/contextactions.jpg" alt="" width="385" height="200" />
 
 It will complete the Equals statement for me! Awesome! I hate writing that method over and over.
 
-<img class="alignnone size-full wp-image-252" title="dialog" src="http://fooberry.com/wp-content/uploads/2008/08/dialog.jpg" alt="" width="442" height="337" />
+<img class="alignnone size-full wp-image-252" title="dialog" src="/wp-content/uploads/2008/08/dialog.jpg" alt="" width="442" height="337" />
 
 YesI would like to compare those itemsand were done!
 

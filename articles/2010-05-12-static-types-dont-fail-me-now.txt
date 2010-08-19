@@ -6,7 +6,7 @@ date: 2010/05/12
 
 I'm really excited about using Cucumber. There has been a desire to get to that level of BDD-ish style tests ever since I first saw how readable they were. We're ready to make that next step. Let's pretend we have the following set of pages.
 
-<a href="http://fooberry.com/wp-content/uploads/2010/05/mockup.png"><img src="http://fooberry.com/wp-content/uploads/2010/05/mockup.png" alt="" title="mockup" width="435" height="239" class="aligncenter size-full wp-image-946" /></a>
+<a href="/wp-content/uploads/2010/05/mockup.png"><img src="/wp-content/uploads/2010/05/mockup.png" alt="" title="mockup" width="435" height="239" class="aligncenter size-full wp-image-946" /></a>
 
 Pretty straight forward. We should be able to write a pretty simple Cucumber feature.
 

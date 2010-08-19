@@ -10,7 +10,7 @@ Our two most likely candidates are <a href="http://www.infragistics.com/">Infrag
 
 Anyway, our first out non-standard requirement is to freeze the column and row headers so we never scroll the first column or the headers to where they are no visible.
 
-<a href="http://fooberry.com/wp-content/uploads/2008/10/image5.png"><img style="border-top-width: 0px; display: block; border-left-width: 0px; float: none; border-bottom-width: 0px; margin-left: auto; margin-right: auto; border-right-width: 0px" title="image" src="http://fooberry.com/wp-content/uploads/2008/10/image-thumb5.png" border="0" alt="image" width="273" height="207" /></a>
+<a href="/wp-content/uploads/2008/10/image5.png"><img style="border-top-width: 0px; display: block; border-left-width: 0px; float: none; border-bottom-width: 0px; margin-left: auto; margin-right: auto; border-right-width: 0px" title="image" src="/wp-content/uploads/2008/10/image-thumb5.png" border="0" alt="image" width="273" height="207" /></a>
 
 The column headers were simple. Both did that right out of the box. To freeze the first column with the WPF Toolkit datagrid requires setting one attribute:
 <pre language="xml" name="code">&lt;Controls:DataGrid AutoGenerateColumns="False" Name="grid" FrozenColumnCount="1"&gt;</pre>

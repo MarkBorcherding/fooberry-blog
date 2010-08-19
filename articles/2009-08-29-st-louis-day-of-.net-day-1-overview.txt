@@ -83,4 +83,4 @@ It's late and I've been typing for a while. I'm getting brief, but about to get 
 <h2>Tomorrow</h2>
 I'm looking forward to tomorrow, although I am still undecided if I'll be there for the JumpStart sessions.
 
-Check out <a href="http://fooberry.com/2009/08/30/st-louis-day-of-net-day-two-overview/">my review of day 2</a>.
+Check out <a href="/2009/08/30/st-louis-day-of-net-day-two-overview/">my review of day 2</a>.

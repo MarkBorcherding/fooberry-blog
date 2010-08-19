@@ -63,12 +63,12 @@ folder-report &amp;
 Sorry about the funny syntax highlighting. There is not "BeyondCompare" language available.
 
 You'll get a nice HTML report.
-<img class="alignnone size-full wp-image-611" title="ss-20090129092919" src="http://fooberry.com/wp-content/uploads/2009/01/ss-20090129092919.png" alt="ss-20090129092919" width="726" height="306" />
+<img class="alignnone size-full wp-image-611" title="ss-20090129092919" src="/wp-content/uploads/2009/01/ss-20090129092919.png" alt="ss-20090129092919" width="726" height="306" />
 
 <strong>Another Update:</strong> It looks like <a href="http://www.scootersoftware.com/vbulletin/showthread.php?t=3753">Beyond Compare will <em>not</em> tell you if an error occurs during the script</a>. This is a huge bummer. If you get something like this in your script, it'll still return 0 for the ExitCode and you won't know it failed.
 <pre>1/29/2009 11:40:42 AM  Fatal Scripting Error: Unable to load base folder
 1/29/2009 11:40:42 AM  Script completed in 0.01 seconds</pre>
-<strong>Yet another update:</strong> There is some <a href="http://fooberry.com/2009/01/30/update-on-beyond-compare-inside-team-build-and-why-im-starting-to-hate-tfs/">new news</a> on using Beyond Compare with Team Build.
+<strong>Yet another update:</strong> There is some <a href="/2009/01/30/update-on-beyond-compare-inside-team-build-and-why-im-starting-to-hate-tfs/">new news</a> on using Beyond Compare with Team Build.
 
 </strong></strong>
 

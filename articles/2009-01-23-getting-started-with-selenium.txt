@@ -50,7 +50,7 @@ namespace SeleniumTests{
    }
 }
 </pre>
-Getting this to run in the Team Build is as easy as<a id="dglw" title="getting the regular NUnit tests running" href="http://fooberry.com/2008/09/05/automating-the-build-step-1/">getting the regular NUnit tests running</a>. First we would want to parameterize those tests a bit so we can pass different hosts, ports and credentials (if present). That's not too hard and should be obvious.
+Getting this to run in the Team Build is as easy as<a id="dglw" title="getting the regular NUnit tests running" href="/2008/09/05/automating-the-build-step-1/">getting the regular NUnit tests running</a>. First we would want to parameterize those tests a bit so we can pass different hosts, ports and credentials (if present). That's not too hard and should be obvious.
 
 We're trying multiple CI builds. One build just compiles and runs the unit test code, which is currently this single test....baby steps.
 <pre language="c#" name="code">

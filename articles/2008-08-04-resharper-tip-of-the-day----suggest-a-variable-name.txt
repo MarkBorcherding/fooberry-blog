@@ -8,7 +8,7 @@ R# Tip of the Day goes Hi Tech with its first video post.
 
 If you find naming your variables mundane, press CTRL+Space after you type the type name and it will suggest a couple for you.
 
-<img class="alignnone size-full wp-image-169" title="variablesuggestion" src="http://fooberry.com/wp-content/uploads/2008/08/variablesuggestion.png" alt="" width="372" height="216" />
+<img class="alignnone size-full wp-image-169" title="variablesuggestion" src="/wp-content/uploads/2008/08/variablesuggestion.png" alt="" width="372" height="216" />
 
 Want something a little better? If you start typing, it will tack on the suggestion to the end of what you started.
 

@@ -86,4 +86,4 @@ And replace that Exec with the following:
          Out   = "$(OutDir)nunit_results.trx" /&gt;
 </pre>
 
-One more to go. MSTest.exe is invoked to publish the newly formatted results. This one might be more difficult to keep relative. Right now, this is pointing (or trying to point) to the MSTest.exe under Program Files. With all that said, I'm unable to find where MSTest is on the build server. Having no access to it makes it a little difficult. Unfortunately I cannot guarantee that the final step will actually work. I hope to have <a href="http://fooberry.com/2008/09/09/automating-the-build-step-1-contd/">more news</a> to report next week.
+One more to go. MSTest.exe is invoked to publish the newly formatted results. This one might be more difficult to keep relative. Right now, this is pointing (or trying to point) to the MSTest.exe under Program Files. With all that said, I'm unable to find where MSTest is on the build server. Having no access to it makes it a little difficult. Unfortunately I cannot guarantee that the final step will actually work. I hope to have <a href="/2008/09/09/automating-the-build-step-1-contd/">more news</a> to report next week.

@@ -10,4 +10,4 @@ You can evaluate comments in code while debugging by highlighting them and hover
 
 
 
-<img class="alignnone size-full wp-image-299" title="evaluate comment" src="http://fooberry.com/wp-content/uploads/2008/09/evaluate_comment.jpg" alt="" width="304" height="198" />
+<img class="alignnone size-full wp-image-299" title="evaluate comment" src="/wp-content/uploads/2008/09/evaluate_comment.jpg" alt="" width="304" height="198" />

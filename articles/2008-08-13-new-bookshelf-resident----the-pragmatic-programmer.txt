@@ -7,7 +7,7 @@ date: 2008/08/13
 I should come up with a new title for this category. Hopefully it is not a bookshelf resident, but gets read, passed around, written in, referenced, anything but sitting around gathering dust.
 
 After a recommendation from a friend, and anticipating an upcoming vacation, I decided to use a Barnes and Nobel gift card to add <a href="http://www.amazon.com/Pragmatic-Programmer-Journeyman-Master/dp/020161622X/ref=pd_bbs_sr_1?ie=UTF8&amp;s=books&amp;qid=1218587060&amp;sr=8-1">The Pragmatic Programmer</a> to my bookshelf.
-<a href="http://www.amazon.com/Pragmatic-Programmer-Journeyman-Master/dp/020161622X/ref=pd_bbs_sr_1?ie=UTF8&amp;s=books&amp;qid=1218587060&amp;sr=8-1"><img class="size-medium wp-image-233 alignright" title="The Pragmatic Programmer" src="http://fooberry.com/wp-content/uploads/2008/08/280-238x300.jpg" alt="" width="167" height="210" /></a>
+<a href="http://www.amazon.com/Pragmatic-Programmer-Journeyman-Master/dp/020161622X/ref=pd_bbs_sr_1?ie=UTF8&amp;s=books&amp;qid=1218587060&amp;sr=8-1"><img class="size-medium wp-image-233 alignright" title="The Pragmatic Programmer" src="/wp-content/uploads/2008/08/280-238x300.jpg" alt="" width="167" height="210" /></a>
 It has come highly recommended and I look forward to getting into later this week. I was pretty sure <a href="http://en.wikipedia.org/wiki/Dave_Thomas_(programmer)">David Thomas</a> was the origin of the <a href="http://rtpscrolls.blogspot.com/2006/11/angry-monkeys-and-cargo-cults.html">Angry Monkeys</a>. In addition, he has several other books from his <a href="http://www.pragprog.com/">pragmatic bookshelf</a> which are all highly rated.
 
 I'll be sure to post more as I make my way through it.
