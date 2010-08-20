@@ -80,14 +80,29 @@ body > header > h1 {
 body > header {
 	display: block;
 	padding-top: 30px;
-	line-height: 180px;
-	margin-bottom: 20px;
+	line-height: 80px;
+	margin-bottom: 50px;
+	height:213px;
 }
 h1, h2, h3, h4 {
   display: inline;
   margin: 0;
   font-weight: 600;
 }
+
+header div{
+	height: 53px; float: left;
+}
+
+header div.tagline{
+	float:right;
+	font-style:italic;
+}
+
+header div.navigation{
+	float:left;
+}
+
 ul, li {
   list-style-type: none;
 }
