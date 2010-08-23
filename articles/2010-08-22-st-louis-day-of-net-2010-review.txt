@@ -14,9 +14,9 @@ There were a few presenters that left a great impression on me. I first have to 
 
 Brad took ideas from the audience on what application he was going to use to demo Sketchflow. He used a webcam to let the crowd watch as he hand sketched the rough prototype, and then fired up Sketch flow and did an impressive job of translating the drawings into an interactive prototype. His session was by far the most engaging of the traditional session I attended. I am by far more tolerant of stumbles when things are ad hoc as opposed to those during something that should be well prepared, like the keynote.
 
-## @dalibyk to stress your brain
+## @dahlbyk to stress your brain
 
-I might have [a geek crush](http://twitter.com/jasonbock/status/21501952068) on [Keith Dailby](http://www.stlouisdayofdotnet.com/SpeakerDetail.aspx?SpeakerID=9), [@dalibyk](http://twitter.com/dahlbyk).  I've seen him speak several times, first at a St. Lous SharePoint conference a couple years ago. His sessions are always the most technically in-depth sessions at the conference, or at least in depth in areas that interest me.  
+I might have [a geek crush](http://twitter.com/jasonbock/status/21501952068) on [Keith Dahlby](http://www.stlouisdayofdotnet.com/SpeakerDetail.aspx?SpeakerID=9), [@dahlbyk](http://twitter.com/dahlbyk).  I've seen him speak several times, first at a St. Lous SharePoint conference a couple years ago. His sessions are always the most technically in-depth sessions at the conference, or at least in depth in areas that interest me.  
 
 Keith did two sessions, *LINQ Internals II: System.Interactive* and *Dynamic Data Demystified*. His LINQ talk highlighted several functions that will replace my home grown versions, such as `Zip` and `ForEach`. 
 
