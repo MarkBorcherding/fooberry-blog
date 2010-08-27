@@ -27,6 +27,7 @@ toto = Toto::Server.new do
   # 
     set :author,    'Mark Borcherding'                        # blog author
     set :title,     'Fooberry'                                # site title
+    set :url,       'http://fooberry.com' 
   # set :root,      "index"                                   # page to load on /
   # set :date,      lambda {|now| now.strftime("%d/%m/%Y") }  # date format for articles
   # set :markdown,  :smart                                    # use markdown + smart-mode
@@ -34,7 +35,9 @@ toto = Toto::Server.new do
   # set :summary,   :max => 150, :delim => /~/                # length of article summary and delimiter
   # set :ext,       'txt'                                     # file extension for articles
   # set :cache,      28800                                    # cache duration, in seconds
-  set :date,  lambda {|now| now.strftime("%B #{now.day.ordinal} %Y") }
+  set :date,        lambda {|now| now.strftime("%B #{now.day.ordinal} %Y") }
+  
+  
 end
 
 run toto
