@@ -2,6 +2,7 @@
 require 'toto'
 require 'coderay'
 require 'rack/codehighlighter'
+require 'redirect'
 
 use Rack::Codehighlighter,  :coderay, 
                             :markdown => true, 
@@ -17,6 +18,8 @@ if ENV['RACK_ENV'] == 'development'
   use Rack::ShowExceptions
 end
 
+redirect  ['/feed/', '/index.xml'],
+          ['/feed', '/index.xml']
 #
 # Create and configure a toto instance
 #
@@ -36,7 +39,6 @@ toto = Toto::Server.new do
   # set :ext,       'txt'                                     # file extension for articles
   # set :cache,      28800                                    # cache duration, in seconds
   set :date,        lambda {|now| now.strftime("%B #{now.day.ordinal} %Y") }
-  
   
 end
 
