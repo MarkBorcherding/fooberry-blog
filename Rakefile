@@ -33,7 +33,7 @@ end
 
 desc "Start"
 task :start do
-  `thin start -R config.ru`
+  `shotgun config.ru`
 end
 
 def toto msg
