@@ -2,7 +2,7 @@
 require 'toto'
 require 'coderay'
 require 'rack/codehighlighter'
-require 'redirect'
+#require 'redirect'
 
 use Rack::Codehighlighter,  :coderay, 
                             :markdown => true, 
@@ -18,8 +18,8 @@ if ENV['RACK_ENV'] == 'development'
   use Rack::ShowExceptions
 end
 
-redirect  ['/feed/', '/index.xml'],
-          ['/feed', '/index.xml']
+#redirect  ['/feed/', '/index.xml'],
+ #         ['/feed', '/index.xml']
 #
 # Create and configure a toto instance
 #
