@@ -1,5 +1,5 @@
 ---
-title: Encryption Side Effects
+title: Encryption Side Effect
 author: Mark Borcherding
 date: 20/09/2010
 
