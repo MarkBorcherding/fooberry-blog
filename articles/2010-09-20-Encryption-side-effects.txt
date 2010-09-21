@@ -1,6 +1,7 @@
+---
 title: Encryption Side Effects
 author: Mark Borcherding
-date: 2010/09/20
+date: 20/09/2010
 
 We finally worked auto-encrypting certain sections of our `web.config` into our build scripts. Nothing is particularly exciting about this, except for the side effect that puzzeled me for a while. 
 
