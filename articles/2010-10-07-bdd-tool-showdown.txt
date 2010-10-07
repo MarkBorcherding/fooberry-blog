@@ -102,3 +102,12 @@ You could still find the `should` steps automagically and skip writing that test
 # Overall
 
 I will definitely look into StorEvil and keep my eye on it, but the zero friction of SpecFlow on our current process will keep me using it.
+
+# Update
+
+As expected, my ignorance didn't do StorEvil justice. From @[davidmfoley](http://twitter.com/#!/davidmfoley):
+
+> ... StorEvil also has a R# runner and an MSBuild task
+> http://bit.ly/cwryeB Just add StorEvil.TeamCity.DLL to your config (or the Assemblies setting if using the MSBuild task) gives you in-progress test results and trending/etc. reports in TeamCity
+
+After talking with him and reading some more of the documentation, there aren't any reasons I can see to not give it a whirl.
