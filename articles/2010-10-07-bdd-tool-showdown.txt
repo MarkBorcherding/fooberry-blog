@@ -54,7 +54,7 @@ Don't get me wrong. I love my command line, but I like that it boils down to an 
 
 There are some draw backs to SpecFlow. The steps aren't very DRY. 
 
-    ::: java
+    :::java
     [Given(@"a foo exists")] 
     public void Given_a_foo_exists(){
       _aFoo = new Foo();
@@ -62,7 +62,7 @@ There are some draw backs to SpecFlow. The steps aren't very DRY.
 
 Not that bad, but it does start to be a pain. It uses the regular expression in the method attribute to match against the steps in the feature file. While this redundancy is something I don't like, it also offers a lot of flexibility. 
 
-    ::: java
+    :::java
     [Given(@"there (?:are|is) (.*) foo(?:s?)"] 
     public void Given_foos(int amount){
       _foos = new List<Foo>();
