@@ -91,7 +91,7 @@ Even though I said the redundancy of SpecFlow's regular expressions was a drawba
 
 It would be nice to write something like this.
 
-    ::: java
+    :::java
     Given(@"there (?:are|is) (.*) foo(?:s?)", () => 
       _foos = new List<Foo>();
       // add them all
